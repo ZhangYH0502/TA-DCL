@@ -1,3 +1,0 @@
- 
- 
-from .CTran import CTranModel
