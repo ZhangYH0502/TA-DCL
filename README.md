@@ -5,18 +5,10 @@ We propose Triplet Attention and Dual-pool Contrastve Learning (TA-DCL) for mult
 ## The model architecture is shown as follows:
 ![Image text](https://github.com/ZhangYH0502/TA-DCL/blob/master/fig8.png)
 
-Main File Configs: <br>
-* train.py: the main file to run for training the model; <br>
-* test.py: test the trained model; <br>
-* patchGAN_discriminator.py: discriminator model; <br>
-* basic_unet.py: generator model; <br>
-* loss.py: loss function; <br>
-* Dataset.py: a dataloader to read data. <br>
-
 <br>
 
 How to run our code: <br>
-* prepare your data with the paired images; <br>
-* modify the data path and reading mode in Dataset.py; <br>
-* run train.py to train the model; <br>
-* run test.py to test the trained model.
+* prepare your data and divide them into sick pool and divide pool; <br>
+* modify the data path and reading mode in dataloaders; <br>
+* modify the model attributes in config_args.py; <br>
+* run main.py to train and test the model.
